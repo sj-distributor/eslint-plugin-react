@@ -11,6 +11,7 @@ module.exports = {
   env: {
     es2022: true,
     browser: true,
+    node: true,
   },
   parserOptions: {
     sourceType: "module",
