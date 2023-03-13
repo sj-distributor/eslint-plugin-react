@@ -11,25 +11,16 @@ ESLint presets for react
 
 ## Installation
 
-You'll first need to install [ESLint](https://eslint.org/):
+You first need to install [ESLint](https://eslint.org/) and the agreed third-party plug-in package:
 
 ```sh
-yarn add eslint
-
-or
-
-npm i eslint --save-dev
+yarn add eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-eslint-plugin eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-unicorn prettier typescript
 ```
 
 Next, install `@sj-distributor/eslint-plugin-react`:
 
 ```sh
-
 yarn add @sj-distributor/eslint-plugin-react
-
-or
-
-npm install @sj-distributor/eslint-plugin-react --save-dev
 ```
 
 ## Usage
@@ -38,7 +29,7 @@ Add `eslint-plugin-react` to the extends section of your `.eslintrc` configurati
 
 ```json
 {
-  "extends": ["plugin:@sj-distributor/eslint-plugin-react/recommended"]
+  "extends": ["plugin:@sj-distributor/react/recommended"]
 }
 ```
 
@@ -53,3 +44,6 @@ Add `eslint-plugin-react` to the extends section of your `.eslintrc` configurati
 - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 - [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort#readme)
+- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
+- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint#readme)
+- [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn#readme)
