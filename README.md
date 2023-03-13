@@ -14,7 +14,7 @@ ESLint presets for react
 You first need to install [ESLint](https://eslint.org/) and the agreed third-party plug-in package:
 
 ```sh
-yarn add eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-eslint-plugin eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-unicorn prettier typescript
+yarn add eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-unicorn prettier typescript
 ```
 
 Next, install `@sj-distributor/eslint-plugin-react`:
@@ -37,9 +37,7 @@ Add `eslint-plugin-react` to the extends section of your `.eslintrc` configurati
 
 - [eslint](https://eslint.org/)
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#readme)
-- [eslint-plugin-eslint-plugin](https://github.com/eslint-community/eslint-plugin-eslint-plugin#readme)
 - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
-- [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node#readme)
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#readme)
 - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
