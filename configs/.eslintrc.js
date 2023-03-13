@@ -4,14 +4,21 @@ module.exports = {
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:eslint-plugin/recommended",
     "plugin:@typescript-eslint/recommended",
   ],
   parser: "@typescript-eslint/parser",
-  plugins: ["react", "simple-import-sort", "unicorn", "import"],
+  plugins: [
+    "react",
+    "simple-import-sort",
+    "unicorn",
+    "import",
+    "@sj-distributor/react",
+  ],
   env: {
+    node: true,
     es2022: true,
     browser: true,
-    node: true,
   },
   parserOptions: {
     sourceType: "module",
@@ -54,6 +61,8 @@ module.exports = {
         next: "*",
       },
     ],
+    "@typescript-eslint/no-var-requires": 0, // 关闭禁止使用 require 语句
+    "@sj-distributor/react/interface-name-prefix": ["error", "I"], // 默认强制 interface 大写 I 前缀
   },
   // 共享配置，提供给每一个将被执行的规则
   settings: {
