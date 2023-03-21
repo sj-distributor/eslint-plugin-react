@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   extends: [
     "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -62,6 +63,7 @@ module.exports = {
     ],
     "@typescript-eslint/no-var-requires": 0, // 关闭禁止使用 require 语句
     "@sj-distributor/react/interface-name-prefix": ["error", "I"], // 默认强制 interface 大写 I 前缀
+    "react/display-name": 0, // 关闭（不允许在 React 组件定义中缺少 displayName）
   },
   // 共享配置，提供给每一个将被执行的规则
   settings: {
