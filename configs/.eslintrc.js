@@ -41,10 +41,10 @@ module.exports = {
       "error",
       {
         cases: {
-          kebabCase: true, // 是否支持横杠 (-) 命名
-          camelCase: false, // 是否支持小驼峰命名
-          snakeCase: false, // 是否支持 (_) 下划线命名
-          pascalCase: false, // 是否支持大坨峰命名
+          kebabCase: true, // 支持横杠 (-) 命名
+          camelCase: false, // 支持小驼峰命名
+          snakeCase: false, // 支持 (_) 下划线命名
+          pascalCase: false, // 支持大坨峰命名
         },
       },
     ],
@@ -61,9 +61,10 @@ module.exports = {
         next: "*",
       },
     ],
-    "@typescript-eslint/no-var-requires": 0, // 关闭禁止使用 require 语句
+    "@typescript-eslint/no-var-requires": 0, // (关闭) 禁止使用 require 语句
     "@sj-distributor/react/interface-name-prefix": ["error", "I"], // 默认强制 interface 大写 I 前缀
-    "react/display-name": 0, // 关闭（不允许在 React 组件定义中缺少 displayName）
+    "react/display-name": 0, // (关闭) 不允许在 React 组件定义中缺少 displayName
+    "react/self-closing-comp": 2, // 检测 JSX 中的所有组件和 HTML 元素，如果元素没有子元素，就会自动转换为自闭合形式
   },
   // 共享配置，提供给每一个将被执行的规则
   settings: {
