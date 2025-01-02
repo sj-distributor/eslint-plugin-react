@@ -14,13 +14,13 @@ ESLint presets for react
 You first need to install [ESLint](https://eslint.org/) and the agreed third-party plug-in package:
 
 ```sh
-yarn add eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-unicorn prettier typescript
+yarn add eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-unicorn prettier typescript -D
 ```
 
 Next, install `@sj-distributor/eslint-plugin-react`:
 
 ```sh
-yarn add @sj-distributor/eslint-plugin-react
+yarn add @sj-distributor/eslint-plugin-react -D
 ```
 
 ## Usage
